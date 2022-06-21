@@ -43,6 +43,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    /* text-align: center; */
 }
 
 .btn:hover {
@@ -55,6 +56,9 @@ html {
 }
 .mt-16 {
     margin-top: 16px !important;
+}
+.mt-32 {
+    margin-top: 32px !important;
 }
 /* comon  */
 .row {
@@ -83,17 +87,18 @@ html {
 
 /* main  */
 .main   {
-
+    
 }
 
-.header {
-    height: 46px;
+#header {
     background-color: black;
     position: fixed;
+    height: 46px;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    
 }
 /* Bỏ dấu chấm trc thẻ li */
 #nav, .subnav {
@@ -153,16 +158,35 @@ html {
 #nav .nav-arrow-down {
     font-size: 14px;
 }
-.header .search-btn {
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
+#header .search-btn {
     padding: 0 21px;
     float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
     
 }
-.header .search-btn:hover {
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+   color: #000;
+}
+
+#header .search-btn:hover {
     cursor: pointer;
     background-color: #f44336;
 }
-.header .search-icon {
+#header .menu-icon,
+#header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
@@ -224,7 +248,7 @@ html {
     line-height: 1.6; 
 }
 .content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
     /* width: 768px; */
     
     
@@ -273,7 +297,7 @@ html {
 }
 /* place  */
 .places-list {   
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .places-img {
